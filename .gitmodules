@@ -1,6 +1,8 @@
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/google/googletest.git
+	ignore = dirty
 [submodule "nanobench"]
 	path = nanobench
 	url = https://github.com/martinus/nanobench.git
+	ignore = dirty
