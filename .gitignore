@@ -1,0 +1,62 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# autotools generated
+
+Makefile.in
+aclocal.m4
+autom4te.cache/
+compile
+config.h.in
+configure
+depcomp
+install-sh
+missing
+src/Makefile.in
+Makefile
+config.h
+config.log
+config.status
+stamp-h1
+
+ar-lib
+config.guess
+config.h.in~
+config.sub
+libtool
+ltmain.sh
+m4/
+test-driver
+
+.deps/
+.vscode

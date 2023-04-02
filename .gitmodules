@@ -1,0 +1,6 @@
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest.git
+[submodule "nanobench"]
+	path = nanobench
+	url = https://github.com/martinus/nanobench.git
