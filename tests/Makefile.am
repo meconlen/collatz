@@ -16,12 +16,12 @@ libgtest_la_LDFLAGS = -pthread
 test_SOURCES = test.cpp 
 test_LDADD = libgtest.la $(top_srcdir)/src/libcollatz.a 
 test_LDFLAGS = -pthread
-test_CPPFLAGS = -I$(top_srcdir)/src/CXX/ -I$(top_srcdir)/googletest/googletest/include -I$(top_srcdir)/googletest/googletest -pthread
+test_CPPFLAGS = -I$(top_srcdir)/src/ -I$(top_srcdir)/googletest/googletest/include -I$(top_srcdir)/googletest/googletest -pthread
 
 benchmark_SOURCES = benchmark.cpp 
 benchmark_LDADD = $(top_srcdir)/src/libcollatz.a 
 benchmark_LDFLAGS = -pthread 
-benchmark_CPPFLAGS = -I$(top_srcdir)/src/CXX/ -I$(top_srcdir)/nanobench/src/include/ -I$(top_srcdir)/nanobench/src/test/ -I$(top_srcdir)/googletest/googletest/include -I$(top_srcdir)/googletest/googletest -pthread
+benchmark_CPPFLAGS = -I$(top_srcdir)/src/ -I$(top_srcdir)/nanobench/src/include/ -I$(top_srcdir)/nanobench/src/test/ -I$(top_srcdir)/googletest/googletest/include -I$(top_srcdir)/googletest/googletest -pthread
 
 check_PROGRAMS = test
 bin_PROGRAMS = benchmark
