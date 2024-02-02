@@ -10,6 +10,7 @@ int main(int argc, char* argv[])
       return -1;
    }
    uint64_t n = std::stoull(argv[1]);
-   verify(n);
-   return 0;
+   bool rc =  verify(n);
+   if(rc == true) return 0;
+   return -1;
 }

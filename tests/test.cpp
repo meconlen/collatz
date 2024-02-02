@@ -23,6 +23,11 @@ TEST(collatz, 5)
    EXPECT_EQ(collatz(5), 6UL);
 }
 
+TEST(collatz, 30000000)
+{
+   EXPECT_EQ(collatz(30000000), 176);
+}
+
 TEST(verify, 1000) 
 {
    EXPECT_EQ(verify(1000), true);
